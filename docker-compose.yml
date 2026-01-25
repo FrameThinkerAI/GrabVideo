@@ -17,5 +17,5 @@ services:
       - ~/Desktop/downloads:/downloads
       - ~/Desktop/cache:/cache
     ports:
-      - 3000:3000
+      - 3300:3000
     restart: unless-stopped
