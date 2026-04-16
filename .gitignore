@@ -39,3 +39,6 @@ Dockerfile.dev
 .dockerignore
 downloads/*
 cache/*
+
+src-tauri/target/*
+src-tauri/resources

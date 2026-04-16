@@ -1,7 +1,7 @@
 import path from 'path';
 import { isDevelopment } from '@/lib/utils';
 
-const BASE_PATH = isDevelopment ? process.cwd() : '/';
+const BASE_PATH = process.env.BASE_PATH || (isDevelopment ? process.cwd() : '/');
 
 export const DOWNLOAD_PATH = path.join(BASE_PATH, 'downloads');
 export const CACHE_PATH = path.join(BASE_PATH, 'cache');
